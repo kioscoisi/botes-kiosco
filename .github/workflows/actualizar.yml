@@ -1,9 +1,6 @@
 name: Actualizar botes
 on:
-  schedule:
-    - cron: "0 20 * * *"   # 22:00 en horario de verano de España
-    - cron: "0 21 * * *"   # 22:00 en horario de invierno de España
-    - cron: "5 * * * *"    # y cada hora, para pillar cambios tras los sorteos
+  # Programación desactivada: la web oficial responde 403 a los servidores de GitHub.
   workflow_dispatch: {}
 permissions:
   contents: write
